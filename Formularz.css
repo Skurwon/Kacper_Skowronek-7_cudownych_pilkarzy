@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+background-color: gold;
+scroll-behavior: smooth;
+letter-spacing: 6px;
+margin-left: 10px;
+margin-right: 10px;	
+}
+
+.title {
+color: white;
+font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+font-size: 66px;
+text-shadow:0 0 6px black;
+	clear:both;
+}
+
+.text {
+color: white;
+font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+font-size: 30px;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: red;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+.line{
+	width: 100%;
+	height: 1px;
+	background-color: red;
+	border-color: black;
+	color: red;
+}
+
+.wrapper {
+            display: flex
+        }
+  
+        .circle1 {
+            height: 5px;
+            width: 5px;
+            border: 20px solid red;
+            border-radius: 100px;
+            position: relative;
+        }
+  
+        .circle2 {
+            height: 5px;
+            width: 5px;
+            border: 20px solid red;
+            border-radius: 200px;
+            position: relative;
+        }
+  
+        .circle1:after {
+            content: "";
+            position: absolute;
+            border-top: 40px solid transparent;
+            border-left: 70px solid white;
+            left: -50px;
+            top: -35px;
+        }
+  
+        .circle2:after {
+            content: "";
+            position: absolute;
+            border-top: 40px solid transparent;
+            border-right: 70px solid white;
+            right: -20px;
+            top: -35px;
+        }
+  
+.kys {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	color: black;
+	font-size: 14px;
+	background-color: whitesmoke;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-display: fallback;
+}
